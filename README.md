@@ -92,6 +92,7 @@
 jupyter notebook preprocessing.ipynb
 
 2. 모델 실행:
+```bash
 # 개인 거래 별 모델
 python main_private.py
 
