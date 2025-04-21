@@ -76,7 +76,32 @@
 금액 분포를 확인하기 위해 개별 거래, 업태 그룹별, 가맹점 그룹별 시각화 수행 (amount < 90,000 필터 적용)
 ### 3.1. 개별 거래 별 시각화
 - 금액 분포 확인
-  ![개별 거래 별 시각화](Finance_AD/image/개별%20거래%20별%20시각화.png)
+![개별 거래 별 시각화](https://github.com/KimYohan0317/Finance_AD/blob/main/image/%EA%B0%9C%EB%B3%84%20%EA%B1%B0%EB%9E%98%20%EB%B3%84%20%EC%8B%9C%EA%B0%81%ED%99%94.png?raw=true)
+### 3.2. (업태로 그룹핑 후 각 그룹 내) 개별 거래 별 시각화
+- 금액 분포 확인
+ -  도소매
+   ![도소매](https://github.com/KimYohan0317/Finance_AD/blob/main/image/%EB%8F%84%EC%86%8C%EB%A7%A4.png)
+ -  서비스  
+   ![서비스](https://github.com/KimYohan0317/Finance_AD/blob/main/image/%EC%84%9C%EB%B9%84%EC%8A%A4.png?raw=true)
+
+ -  통신업  
+   ![통신업](https://github.com/KimYohan0317/Finance_AD/blob/main/image/%ED%86%B5%EC%8B%A0%EC%97%85.png?raw=true)
+
+ -  General_e_comm  
+   ![General_e_comm](https://github.com/KimYohan0317/Finance_AD/blob/main/image/General_e_comm.png?raw=true)
+### 3.3. (가맹점으로 그룹핑 후 각 그룹 내) 개별 거래 별 시각화
+- 금액 분포 확인
+ -  nfgZ69lWmQ==  
+   ![nfgZ69lWmQ==](https://github.com/KimYohan0317/Finance_AD/blob/main/image/nfgZ69lWmQ==.png?raw=true)
+
+ -  di7FqMsiZ4d+0dQ=  
+   ![di7FqMsiZ4d+0dQ=](https://github.com/KimYohan0317/Finance_AD/blob/main/image/di7FqMsiZ4d+0dQ=.png?raw=true)
+
+ -  /KMJNdw=  
+   ![/KMJNdw=](https://github.com/KimYohan0317/Finance_AD/blob/main/image/KMJNdw%3D.png?raw=true)
+
+ -  lrWX+FgZzQ==  
+   ![lrWX+FgZzQ==](https://github.com/KimYohan0317/Finance_AD/blob/main/image/lrWX%2BFgZzQ%3D%3D.png?raw=true)
 ## 4. 매입 취소 탐지 모델
 
 ### 4.1. 분석 모델 선정
@@ -122,9 +147,14 @@
         - 정상, 비정상 거래를 나타내는 이진 변수로, 모델 학습을 위한 타겟 변수임
 
 ### 4.4. 실험 결과
-- 개별 거래 분류 모델: Random Forest (acc: 0.994, F1: 0.1865)
-- 업태 그룹별 모델: 도소매 (RF acc: 0.9916, F1: 0.1382)
-- 가맹점 그룹별 모델: di7FqMsiZ4d+0dQ= (RF acc: 0.9978, F1: 0.2128)
+- **개별 거래 분류 모델**: Random Forest (Accuracy: 0.994, F1-score: 0.1865)  
+  ![개별 거래 분류 모델 결과](https://github.com/KimYohan0317/Finance_AD/blob/main/image/%EA%B0%9C%EB%B3%84%20%EA%B1%B0%EB%9E%98%20%EB%B6%84%EB%A5%98%20%EB%AA%A8%EB%8D%B8%20%EC%8B%A4%ED%97%98%20%EA%B2%B0%EA%B3%BC.png?raw=true)
+
+- **업태 그룹별 모델**: 도소매 (Random Forest Accuracy: 0.9916, F1-score: 0.1382)  
+  ![업태 그룹별 모델 결과](https://github.com/KimYohan0317/Finance_AD/blob/main/image/%EC%97%85%ED%83%9C%20%EA%B7%B8%EB%A3%B9%EB%B3%84%20%EB%AA%A8%EB%8D%B8%20%EC%8B%A4%ED%97%98%20%EA%B2%B0%EA%B3%BC.png?raw=true)
+
+- **가맹점 그룹별 모델**: di7FqMsiZ4d+0dQ= (Random Forest Accuracy: 0.9978, F1-score: 0.2128)  
+  ![가맹점 그룹별 모델 결과](https://github.com/KimYohan0317/Finance_AD/blob/main/image/%EA%B0%80%EB%A7%B9%EC%A0%90%20%EA%B7%B8%EB%A3%B9%EB%B3%84%20%EB%AA%A8%EB%8D%B8%20%EC%8B%A4%ED%97%98%20%EA%B2%B0%EA%B3%BC.png?raw=true)
 
 ## 5. 결론
 - Random Forest가 가장 좋은 성능을 보임
